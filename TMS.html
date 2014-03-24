@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <script src="https://my.ctsi-global.com/ECTMSv2/Scripts/CTSILoginErrorHandling.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>TSG, Inc. - ShipTSG.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/carousel.css" rel="stylesheet">
+    <link href="assets/css/tsg.css" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script>
+
+<style>
+.forgot {
+color:#999999;
+}
+.logo{
+max-width: 100%;
+}
+#divLoginMessage{
+color:red;
+}
+</style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+
+
+<div class="container">
+<br /><br /><br /><br />
+</div>
+<div class="container center">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+					<img class="logo" src="TSG%20Logo.png" alt="TSG LOGO">
+					<hr />
+                    <h4 class="text-center">
+                       TMS Login</h4>
+                    <form class="form form-signup" role="form" action="https://my.ctsi-global.com/ECTMSv2/Products/Security/default.aspx" method="post" >
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                            </span>
+                            <input id="txtBoxUsername" name="txtBoxUsername" type="text" class="form-control" placeholder="Username" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input id="txtBoxPassword" name="txtBoxPassword" type="password" class="form-control" placeholder="Password" />
+                        </div>
+                    </div>
+				   <div id="divLoginMessage"></div>
+
+                </div>
+				<input type="hidden" id="ClientKeyID" name="ClientKeyID" value="5148">
+				<input type="hidden" id="ClientServerIP" name="ClientServerIP" value="74.203.138.75">
+                <button type="submit" name="submit" value='Submit'  class="btn btn-primary btn-block">LOGIN</button>
+  
+                   </form>
+            </div>
+			<a class='forgot' href='http://www.shiptsg.net/Dev/forgotpassword.php'><i>Trouble Logging In?</i></a>
+
+        </div>
+    </div>
+</div>
+
+
+    <script>
+         LoadLoginMessage(document.getElementById("divLoginMessage"));
+    </script>
+
+ 
+
+
+</body>
+</html>
